@@ -51,13 +51,13 @@ function playCounter() {
     today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     namajTiming.forEach(item=>{
         if (item.i == 0 && timeTosec(item.h, item.m, item.s)- timeTosec(parseInt(today.getHours()),parseInt(today.getMinutes()),parseInt(today.getSeconds()))> 0 &&
-            (timeTosec(item.h, item.m, item.s)-timeTosec(parseInt(today.getHours()),parseInt(today.getMinutes()),parseInt(today.getSeconds()))<=8*60*60)){
+            (timeTosec(item.h, item.m, item.s)-timeTosec(parseInt(today.getHours()),parseInt(today.getMinutes()),parseInt(today.getSeconds()))<=4*60*60)){
             countDown.innerText = printTimer(timeTosec(item.h, item.m, item.s)-timeTosec(parseInt(today.getHours()),parseInt(today.getMinutes()),parseInt(today.getSeconds())));
             title.innerText = "Sehri Time";
             // console.log("Sehri");
         }
         else if (item.i == 3 && timeTosec(item.h, item.m, item.s) - timeTosec(parseInt(today.getHours()),parseInt(today.getMinutes()),parseInt(today.getSeconds()))> 0 &&
-            (timeTosec(item.h, item.m, item.s)-timeTosec(parseInt(today.getHours()),parseInt(today.getMinutes()),parseInt(today.getSeconds()))<=8*60*60)){
+            (timeTosec(item.h, item.m, item.s)-timeTosec(parseInt(today.getHours()),parseInt(today.getMinutes()),parseInt(today.getSeconds()))<=13.5*60*60)){
             countDown.innerText = printTimer(timeTosec(item.h, item.m, item.s)-timeTosec(parseInt(today.getHours()),parseInt(today.getMinutes()),parseInt(today.getSeconds())));
             title.innerText = "Iftar Time";
             // console.log("iftar");
