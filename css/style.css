@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.ad_area{
+    height: 250px;
+    width: 300px;
+    position: relative;
+    cursor: pointer;
+    touch-action: auto;
+    overflow: hidden;
+    background-image: url("../images/bg.jpg");
+    background-size: 100% 100%;
+}
+
+.salah_1,.salah_2,.salah_3,.salah_4,.salah_5{
+    height: 44px;
+    width: 75px;
+    text-align: center;
+    border: 1px solid grey;
+    margin: 2px;
+    background-color: #fefefe;
+    position: absolute;
+}
+
+.salah_1{
+    top: 0px;
+    left: 5px;
+}
+.salah_2{
+     top: 50px;
+     left: 5px;
+ }
+
+.salah_3{
+    top: 100px;
+    left: 5px;
+}
+.salah_4{
+    top: 150px;
+    left: 5px;
+}
+
+.salah_5{
+    top: 200px;
+    left: 5px;
+}
+
+
+.content_box{
+    font-family: "Book Antiqua";
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 200px;
+    height: 125px;
+    text-align: center;
+    position: absolute;
+    top: 25px;
+    left: 93px;
+}
+
+.content_box h1{
+    font-size: 26px;
+    color: whitesmoke;
+}
+
+.content_box h2{
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+.content_box h3{
+    font-size: 20px;
+    color: whitesmoke !important;
+}
+
+
+#audioFile{
+    display: none;
+}
+
+
+#audioFile2{
+    display: none;
+}
