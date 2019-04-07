@@ -57,7 +57,7 @@ function playCounter() {
             // console.log("Sehri");
         }
         else if (item.i == 3 && timeTosec(item.h, item.m, item.s) - timeTosec(parseInt(today.getHours()),parseInt(today.getMinutes()),parseInt(today.getSeconds()))> 0 &&
-            (timeTosec(item.h, item.m, item.s)-timeTosec(parseInt(today.getHours()),parseInt(today.getMinutes()),parseInt(today.getSeconds()))<=12*60*60)){
+            (timeTosec(item.h, item.m, item.s)-timeTosec(parseInt(today.getHours()),parseInt(today.getMinutes()),parseInt(today.getSeconds()))<=8*60*60)){
             countDown.innerText = printTimer(timeTosec(item.h, item.m, item.s)-timeTosec(parseInt(today.getHours()),parseInt(today.getMinutes()),parseInt(today.getSeconds())));
             title.innerText = "Iftar Time";
             // console.log("iftar");
